@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setting environment 1
       run:
-        apt-get install -y python-setuptools
+        sudo apt-get install -y python-setuptools
     - name: Setting environment 2
       run:
         pip3 install --user django
