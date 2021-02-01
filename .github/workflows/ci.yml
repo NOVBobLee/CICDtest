@@ -13,6 +13,6 @@ jobs:
       run:
         pip3 install --user django
     - name: Run Django unit tests 
-      run:
+      run: |
         cd airline0
         python3 manage.py test
