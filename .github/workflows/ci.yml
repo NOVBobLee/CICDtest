@@ -2,12 +2,12 @@ name: Testing
 on: push
 
 jobs:
-	test_this:
-		runs-on: ubuntu-latest
-		steps:
-		- uses: actions/checkout@v2
-		- name: Run Django unit tests 123
-		run:
-			pip3 install --user django
-			cd airline0
-			python3 manage.py test
+  test_this:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Django unit tests 123
+      run:
+        pip3 install --user django
+        cd airline0
+        python3 manage.py test
