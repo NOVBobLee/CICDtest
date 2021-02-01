@@ -6,9 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run Django unit tests 123
+    - name: Setting environment 1
       run:
         apt-get install -y python-setuptools
-        cd airline0
+    - name: Setting environment 2
+      run:
         pip3 install --user django
+    - name: Run Django unit tests 
+      run:
+        cd airline0
         python3 manage.py test
